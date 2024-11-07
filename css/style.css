@@ -1,0 +1,156 @@
+:root {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+::before,::after {
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+
+section {
+    background: var(--bg-black-900);
+    min-height: 100vh;
+    display: block;
+    position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    opacity: 1;
+}
+
+.LSide {
+    width: 270px;
+    background: var(--bg-black-100);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    padding: 30px;
+    border-right: 1px solid var(--bg-black-50);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pfp {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--font-skin);
+    margin: 0 auto 10px auto;
+    display: block;
+}
+.logo {
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Caveat', sans-serif;
+    text-transform: capitalize;
+}
+.logo a {
+    color: var(--text-black-900);
+    padding: 10px 20px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    position: relative;
+}
+.logo a::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--font-skin);
+    border-left: 5px solid var(--font-skin);
+    bottom: 0px;
+    left: 0px;
+}
+.logo a::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--font-skin);
+    border-right: 5px solid var(--font-skin);
+    top: 0px;
+    right: 0px;
+}
+.nav {
+    margin-top: 50px;
+}
+.nav li {
+    margin-bottom: 20px;
+    display: block;
+}
+.nav li a{
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    color: var(--text-black-900);
+    padding: 5px 15px;
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.nav li a.active{
+    color: var(--font-skin);
+}
+.nav li a i{
+    margin-right: 15px;
+}
+
+.home-section {
+    padding: 50px 0;
+    background-color: #f4f4f9;
+}
+
+.home-info {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.greeting, .job-and-spec, .erm {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.name {
+    color: #008cff; /* or any color of your choice */
+    font-weight: bold;
+}
+
+.nickname {
+    font-style: italic;
+}
+
+.job, .speciality, .lecturer {
+    color: #333;
+    font-weight: bold;
+}
